@@ -129,6 +129,9 @@ env.bak/
 venv.bak/
 .jg-env/
 
+
+*.DS_Store
+
 # intellij configs
 .idea/
 

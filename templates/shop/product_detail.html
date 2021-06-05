@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--<p>{% url 'product_detail_url' product.category.slug product.slug %}</p><hr>-->
+<p>{{ product.get_absolute_url }}</p>
+<h1 class="title"> {{ product }}</h1>
+<h2 class="subtitle"> ₹{{ product.price }}</h2>
+{% if product.description %}<p>{{ product.description }}</p>{% endif %}
+{% endblock %}

@@ -1,0 +1,38 @@
+<footer class="footer">
+
+<!--    <a href="#" class="card-footer-item">View</a>-->
+<!--    <div class="container">-->
+    <div class="row">
+        <div class="col-md col-md-offset-3 col-xs-12 d-flex justify-content-center">
+            <a href="{% url 'blog_url' %}" class="navbar-item">Blog</a>
+        </div>
+        <div class="col-md col-md-offset-3 d-flex justify-content-center">
+            <a href="{% url 'contact_url' %}" class="navbar-item">Contact</a>
+        </div>
+      <div class="col-md col-md-offset-3 d-flex justify-content-center">
+            <a href="{% url 'about_url' %}" class="navbar-item">About</a>
+        </div>
+    </div>
+
+<!--    </div>-->
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <a class="logo" href="#">Django</a>
+      </div>
+      <ul class="thanks">
+        <li>
+          <span>Hosting by</span> <a class="rackspace" href="https://www.rackspace.com">Rackspace</a>
+        </li>
+        <li class="design"><span>Design by</span> <a class="threespot" href="https://www.threespot.com">Threespot</a> <span class="ampersand">&amp;</span> <a class="andrevv" href="http://andrevv.com/"></a></li>
+      </ul>
+      <p class="copyright">&copy; 2005-{% now "Y" %}
+        <a href="#"> Django Software
+        Foundation</a> and individual contributors. Django is a
+        <a href="#">registered trademark</a> of the Django Software Foundation.
+      </p>
+    </div>
+  </div>
+
+</footer>

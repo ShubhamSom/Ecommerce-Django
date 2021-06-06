@@ -33,9 +33,10 @@ urlpatterns += [
     path(r'about/', include('apps.about.urls')),
     path(r'contact/', include('apps.contact.urls')),
     path(r'blog/', include('apps.blog.urls')),
-    path(r'test/', TemplateView.as_view(template_name='testing_file.html'), name='test'),
-    path(r'temp1/', TemplateView.as_view(template_name='temp-templates/modified.html'), name='test1'),
-    path(r'temp2/', TemplateView.as_view(template_name='temp-templates/site.html'), name='test2'),
+
+    path(r'tmp/', TemplateView.as_view(template_name='temp-templates/testing_file.html'), name='test'),
+    path(r'tmp1/', TemplateView.as_view(template_name='temp-templates/tf1.html'), name='test1'),
+    path(r'tmp2/', TemplateView.as_view(template_name='temp-templates/tf2.html'), name='test2'),
 ]
 
 #  Add URL maps to redirect the base URL to our application
